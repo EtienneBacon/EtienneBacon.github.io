@@ -1,7 +1,7 @@
 ---
 title: "Beyond volatility of volatility: decomposing the informational content of VVIX"
-collection: working papers
-category: manuscripts
+collection: Working papers
+category: working
 permalink: /publication/BeyondVOV
 excerpt: 'This study investigates the informational content of the VVIX, traditionally viewed as a proxy for the S&P 500 index's volatility of the volatility (VOV). We show that this interpretation is incomplete: the VVIX also embeds a long-run variance (LRV) component. To establish this result, we first demonstrate that regressions of squared VVIX on VOV proxies gain substantial explanatory power once LRV measures are incorporated. We then develop a tractable theoretical framework linking VVIX to three risk drivers-the instantaneous variance, LRV, and VOV-and show that the VVIX loads on both VOV and LRV. Our empirical analysis reveals that VVIX dynamics are dominated by LRV in calm markets, but by VOV during financial stress. We further show that these variance components explain option returns in distinct markets: S&P 500 index option straddles load on the instantaneous variance and LRV, while VIX option straddles load on the VOV. Taken together, our results redefine the role of the VVIX, establishing it as a measure of both VOV and LRV uncertainty, with important implications for how it should be read and used by finance practitioners.'
 date: 2025-10-16
