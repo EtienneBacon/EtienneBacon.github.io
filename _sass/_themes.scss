@@ -101,4 +101,20 @@ $vimeo-color                : #1ab7ea;
 $vine-color                 : #00bf8f;
 $youtube-color              : #bb0000;
 $xing-color                 : #006567;
+
+
+.btn-github {
+  background-color: #24292e;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 8px;
+
+  &:hover {
+    background-color: #444;
+    color: white;
+  }
+}
    
