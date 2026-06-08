@@ -1,6 +1,6 @@
+Here's your full corrected main.scss:
+scss---
 ---
----
-
 @import
     "vendor/breakpoint/breakpoint",
     "themes",
@@ -41,11 +41,9 @@ html, body {
   overflow-x: hidden;
   max-width: 100%;
 }
-
 .masthead {
   margin-bottom: 0 !important;
 }
-
 #main {
   padding-top: 0 !important;
   margin-top: 0 !important;
@@ -54,30 +52,30 @@ html, body {
   margin-left: auto !important;
   margin-right: auto !important;
 }
-
 .page {
   padding-top: 0 !important;
 }
-
 .page__inner-wrap {
   margin-top: 0 !important;
+  overflow: visible !important;
 }
-
 .initial-content {
   margin-top: 0 !important;
+  overflow: visible !important;
 }
 
 /* ── Hero banner ── */
 .hero-banner {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   margin-top: -2em;
-
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
   background-image: url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -133,12 +131,11 @@ html, body {
 
 /* ── About section ── */
 .page__content {
-  max-width: 1200px !important;
+  max-width: 860px !important;
   margin: 2rem auto !important;
-  padding: 0 4rem !important;
+  padding: 0 2rem !important;
   text-align: justify;
 }
-
 .page__hero,
 .hero-banner {
   max-width: none !important;
