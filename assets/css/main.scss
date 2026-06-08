@@ -9,17 +9,13 @@
  */
 @import
     "vendor/breakpoint/breakpoint",
-
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
     "include/mixins",
     "vendor/susy/susy",
-
     "layout/reset",
     "layout/base",
-
     "include/utilities",
     "layout/tables",
     "layout/buttons",
@@ -28,14 +24,11 @@
     "layout/navigation",
     "layout/footer",
     "syntax",
-
     "layout/forms",
-
     "layout/page",
     "layout/archive",
     "layout/sidebar",
     "layout/json_cv",
-
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
@@ -58,7 +51,7 @@
   height: 220px;
   display: flex;
   align-items: center;
-  padding: 0 4rem;
+  padding: 0 6rem;
   background-image: url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -110,7 +103,10 @@
   color: #fff;
 }
 
-/* ── Fix theme top padding ── */
+/* ── Fix theme padding/gaps ── */
+.masthead {
+  margin-bottom: 0 !important;
+}
 #main {
   padding-top: 0 !important;
   margin-top: 0 !important;
@@ -120,16 +116,6 @@
 }
 .page__inner-wrap {
   margin-top: 0 !important;
-}
-
-/* ── Remove gap between nav and hero ── */
-.masthead {
-  margin-bottom: 0 !important;
-}
-
-/* ── Hero content positioning ── */
-.hero-banner {
-  padding: 0 6rem;
 }
 
 /* ── Narrow the about section ── */
