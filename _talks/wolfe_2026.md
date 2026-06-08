@@ -1,7 +1,7 @@
 ---
 title: "WOLFE 3rd Annual Canadian Quantitative and Macro Investment Conference"
 collection: talks
-type: "Talk"
+type: "Invited talk"
 permalink: /talks/wolfe_2026
 venue: "Hilton, Toronto"
 date: 2026-05-05
