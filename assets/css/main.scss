@@ -154,6 +154,10 @@ html, body {
   float: none !important;
   width: 100% !important;
 }
+.archive__item-title a,
+.archive__item-title a:hover {
+  text-decoration: none !important;
+}
 
 .hero-cv-btn,
 .hero-cv-btn:visited,
