@@ -121,3 +121,20 @@
 .page__inner-wrap {
   margin-top: 0 !important;
 }
+
+/* ── Remove gap between nav and hero ── */
+.masthead {
+  margin-bottom: 0 !important;
+}
+
+/* ── Hero content positioning ── */
+.hero-banner {
+  padding: 0 6rem;
+}
+
+/* ── Narrow the about section ── */
+.page__content {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
