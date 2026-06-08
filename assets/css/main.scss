@@ -41,3 +41,75 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* ── Centered nav ── */
+.masthead__inner-wrap {
+  text-align: center;
+}
+.greedy-nav .visible-links {
+  justify-content: center;
+}
+
+/* ── Hero banner ── */
+.hero-banner {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 20, 40, 0.58);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2rem;
+  max-width: 700px;
+}
+.hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fff !important;
+  margin: 0 0 0.4rem;
+  border: none;
+}
+.hero-sub {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.78);
+  margin: 0 0 2rem;
+}
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: center;
+}
+.hero-links a {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border: 1.5px solid rgba(255,255,255,0.7);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.88rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s;
+}
+.hero-links a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 { font-size: 2.2rem; }
+}
