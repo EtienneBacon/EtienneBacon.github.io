@@ -1,4 +1,4 @@
-scss---
+---
 ---
 
 /*
@@ -42,17 +42,42 @@ scss---
   justify-content: center;
 }
 
+/* ── Full width fix ── */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* ── Fix theme padding/gaps ── */
+.masthead {
+  margin-bottom: 0 !important;
+}
+#main {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.page {
+  padding-top: 0 !important;
+}
+.page__inner-wrap {
+  margin-top: 0 !important;
+}
+.initial-content {
+  margin-top: 0 !important;
+}
+
 /* ── Hero banner ── */
 .hero-banner {
   position: relative;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
   margin-top: -2em;
-  height: 320px;
+  height: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
   background-image: url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -71,35 +96,37 @@ scss---
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  margin-left: 0;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 2rem;
 }
 .hero-avatar {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: 3px solid rgba(255,255,255,0.8);
   object-fit: cover;
   flex-shrink: 0;
 }
 .hero-text h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #fff !important;
   margin: 0 0 0.2rem;
   border: none;
 }
 .hero-text .hero-sub {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: rgba(255,255,255,0.75);
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.75rem;
 }
 .hero-links {
   display: flex;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 .hero-links a {
   color: rgba(255,255,255,0.85);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-decoration: none;
   transition: color 0.15s;
 }
@@ -107,31 +134,7 @@ scss---
   color: #fff;
 }
 
-/* ── Fix theme padding/gaps ── */
-.masthead {
-  margin-bottom: 0 !important;
-}
-#main {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-.page {
-  padding-top: 0 !important;
-  overflow: hidden;
-}
-.page__inner-wrap {
-  margin-top: 0 !important;
-}
-.initial-content {
-  margin-top: 0 !important;
-}
-
-/* ── Full width fix ── */
-body {
-  overflow-x: hidden;
-}
-
-/* ── Narrow the about section ── */
+/* ── About section centered ── */
 .page__content {
   max-width: 600px;
   margin: 2rem auto;
