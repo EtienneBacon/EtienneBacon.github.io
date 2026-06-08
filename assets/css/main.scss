@@ -48,30 +48,41 @@ html, body {
   max-width: 100%;
 }
 
-/* ── Fix theme padding/gaps ── */
 .masthead {
   margin-bottom: 0 !important;
 }
+
 #main {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
+
 .page {
-  padding-top: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
+
 .page__inner-wrap {
-  margin-top: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  float: none !important;
 }
+
 .initial-content {
-  margin-top: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* ── Hero banner ── */
 .hero-banner {
-  position: fixed;
-  top: 66px;
-  left: 0;
-  right: 0;
+  width: 100% !important;
+  max-width: 100% !important;
   height: 360px;
   display: flex;
   align-items: center;
@@ -79,7 +90,7 @@ html, body {
   background-image: url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
-  z-index: 1;
+  position: relative;
 }
 .hero-banner::before {
   content: '';
@@ -133,7 +144,7 @@ html, body {
 /* ── About section ── */
 .page__content {
   max-width: 900px;
-  margin: 440px auto 2rem;
+  margin: 2rem auto;
   padding: 0 3rem;
   text-align: justify;
 }
