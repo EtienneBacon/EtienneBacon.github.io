@@ -39,14 +39,16 @@
   margin-top: 0 !important;
 }
 
-.page {
+.page,
+.page__inner-wrap,
+.page__content {
   width: 100% !important;
   max-width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  float: none !important;
 }
 
 .page__inner-wrap {
