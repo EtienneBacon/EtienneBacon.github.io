@@ -36,6 +36,7 @@
   text-align: left !important;
 }
 .masthead {
+  margin-bottom: 0 !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
@@ -53,9 +54,6 @@ html, body {
   overflow-x: hidden;
   max-width: 100%;
 }
-.masthead {
-  margin-bottom: 0 !important;
-}
 #main {
   padding-top: 0 !important;
   margin-top: 0 !important;
@@ -64,10 +62,15 @@ html, body {
 }
 .page {
   padding-top: 0 !important;
+  width: 100% !important;
 }
 .page__inner-wrap {
   margin-top: 0 !important;
   overflow: visible !important;
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 .initial-content {
   margin-top: 0 !important;
@@ -125,6 +128,7 @@ html, body {
 }
 .hero-links {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 .hero-links a {
@@ -142,14 +146,12 @@ html, body {
 .hero-banner {
   max-width: none !important;
 }
-
 .page__content {
   max-width: 1100px !important;
   margin: 2rem auto !important;
   padding: 0 2rem !important;
   text-align: justify;
 }
-
 .page__content p,
 .page__content ul,
 .page__content h1,
@@ -163,18 +165,8 @@ html, body {
   max-width: 1100px !important;
   margin: 3rem auto !important;
   padding: 0 2rem !important;
-}
-
-/* ── Center page content ── */
-.page {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-}
-
-.page__inner-wrap {
+  float: none !important;
   width: 100% !important;
-  max-width: 1100px !important;
 }
 
 .hero-cv-btn,
