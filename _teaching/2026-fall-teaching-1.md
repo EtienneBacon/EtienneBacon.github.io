@@ -1,5 +1,5 @@
 ---
-title: "Contrats à terme et options"
+title: "FIN5550 - Options et contrats à terme"
 collection: teaching
 type: "Undergraduate courses"
 permalink: 
