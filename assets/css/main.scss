@@ -55,7 +55,7 @@
   position: relative;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  min-height: 60vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,6 +64,7 @@
   background-size: cover;
   background-position: center;
   color: #fff;
+  margin-top: -1px;
 }
 .hero-banner::before {
   content: '';
