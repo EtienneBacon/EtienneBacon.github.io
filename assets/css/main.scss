@@ -59,9 +59,27 @@ html, body {
   padding-right: 0 !important;
   float: none !important;
 }
+article.page {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  float: none !important;
+}
 .page__inner-wrap {
   margin-top: 0 !important;
   overflow: visible !important;
+}
+div.page__inner-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  float: none !important;
 }
 .initial-content {
   margin-top: 0 !important;
