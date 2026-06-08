@@ -55,62 +55,57 @@
   position: relative;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  min-height: 50vh;
+  height: 220px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  padding: 0 4rem;
   background-image: url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
-  color: #fff;
-  margin-top: -1px;
 }
 .hero-banner::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(10, 20, 40, 0.58);
+  background: rgba(10, 20, 50, 0.45);
 }
 .hero-content {
   position: relative;
   z-index: 1;
-  padding: 3rem 2rem;
-  max-width: 700px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
-.hero-content h1 {
-  font-size: 3.2rem;
+.hero-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.8);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.hero-text h1 {
+  font-size: 2rem;
   font-weight: 700;
   color: #fff !important;
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.2rem;
   border: none;
 }
-.hero-sub {
-  font-size: 1.15rem;
-  color: rgba(255,255,255,0.78);
-  margin: 0 0 2rem;
+.hero-text .hero-sub {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  margin: 0 0 0.6rem;
 }
 .hero-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  justify-content: center;
+  gap: 0.75rem;
 }
 .hero-links a {
-  display: inline-block;
-  padding: 0.5rem 1.2rem;
-  border: 1.5px solid rgba(255,255,255,0.7);
-  border-radius: 4px;
-  color: #fff;
-  font-size: 0.88rem;
-  letter-spacing: 0.03em;
+  color: rgba(255,255,255,0.85);
+  font-size: 1.1rem;
   text-decoration: none;
-  transition: background 0.18s, color 0.18s;
+  transition: color 0.15s;
 }
 .hero-links a:hover {
-  background: rgba(255,255,255,0.15);
-}
-
-@media (max-width: 600px) {
-  .hero-content h1 { font-size: 2.2rem; }
+  color: #fff;
 }
