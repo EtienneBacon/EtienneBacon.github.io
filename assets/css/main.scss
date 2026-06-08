@@ -175,11 +175,17 @@ html, body {
 }
 
 .hero-cv-btn {
+  color: rgba(255,255,255,0.85) !important;
   font-size: 0.85rem !important;
   font-weight: 700;
-  border: 2px solid rgba(255,255,255,0.8);
-  border-radius: 4px;
-  padding: 2px 10px;
-  line-height: 1.6;
+  text-decoration: none !important;
+  border: none !important;
+  padding: 0 !important;
+  line-height: 1;
   letter-spacing: 0.05em;
+  transition: color 0.15s;
+}
+
+.hero-cv-btn:hover {
+  color: #fff !important;
 }
