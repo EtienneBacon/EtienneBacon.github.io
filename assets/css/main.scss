@@ -154,9 +154,14 @@ html, body {
   float: none !important;
   width: 100% !important;
 }
+
+.archive__item-title,
 .archive__item-title a,
 .archive__item-title a:hover {
   text-decoration: none !important;
+  cursor: default !important;
+  pointer-events: none !important;
+  color: inherit !important;
 }
 
 .hero-cv-btn,
