@@ -191,3 +191,10 @@ html, body {
 .hero-cv-btn:hover {
   color: #fff !important;
 }
+
+/* ── Center single page content ── */
+.page {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
