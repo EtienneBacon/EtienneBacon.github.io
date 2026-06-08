@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Etienne Bacon"
 title_separator          : "-"
 name                     : &name "Etienne Bacon"
-description              : &description "Professor of Finance at l'Université du Québec à Montréal"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Professor of Finance at l'Université du Québec à Montréal\n I have not failed. 'I've just found 10,000 ways that won't work.' T. Edison"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://EtienneBacon.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,21 +26,21 @@ author:
   avatar           : "profile.png"
   name             : "Etienne Bacon"
   pronouns         : # example: "she/her"  
-  bio              : "Professor of Finance at l'Université du Québec à Montréal"
+  bio              : "Assistant Professor of Finance"
   location         : "Canada"
   employer         : "Université du Québec à Montréal"
-  uri              : # URL
-  email            : "none@example.org" 
+  uri              : "https://finance.esg.uqam.ca/corps-enseignant/professeurs/professeur/bacon.etienne/"
+  email            : "bacon.etienne@uqam.ca" 
 
   # Academic websites
-  academia         : # URL
+  academia         : "https://finance.esg.uqam.ca/corps-enseignant/professeurs/professeur/bacon.etienne/"
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=XkMVGosAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : #
   semantic         : # URL
-  ssrn             : # URL
+  ssrn             : "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6098009"
   pubmed           : #
   researchgate     : # URL
   scopus           : # URL
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "etienne-bacon"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
