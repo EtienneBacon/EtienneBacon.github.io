@@ -1,4 +1,4 @@
----
+scss---
 ---
 
 /*
@@ -48,13 +48,15 @@
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-top: -2em;
-  height: 220px;
+  height: 320px;
   display: flex;
   align-items: center;
-  padding: 0 6rem;
+  justify-content: center;
+  padding: 0;
   background-image: url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 .hero-banner::before {
   content: '';
@@ -67,11 +69,13 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-left: 0;
 }
 .hero-avatar {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   border: 3px solid rgba(255,255,255,0.8);
   object-fit: cover;
@@ -113,9 +117,18 @@
 }
 .page {
   padding-top: 0 !important;
+  overflow: hidden;
 }
 .page__inner-wrap {
   margin-top: 0 !important;
+}
+.initial-content {
+  margin-top: 0 !important;
+}
+
+/* ── Full width fix ── */
+body {
+  overflow-x: hidden;
 }
 
 /* ── Narrow the about section ── */
