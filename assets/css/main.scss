@@ -7,7 +7,6 @@
  * Note that the files are processed in the order they are imported, so they are partly
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
-
 @import
     "vendor/breakpoint/breakpoint",
 
@@ -55,6 +54,7 @@
   position: relative;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
+  margin-top: -2em;
   height: 220px;
   display: flex;
   align-items: center;
@@ -108,4 +108,16 @@
 }
 .hero-links a:hover {
   color: #fff;
+}
+
+/* ── Fix theme top padding ── */
+#main {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+.page {
+  padding-top: 0 !important;
+}
+.page__inner-wrap {
+  margin-top: 0 !important;
 }
