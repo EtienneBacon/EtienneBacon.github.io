@@ -1,20 +1,35 @@
----
+Add the hero banner the same way as in single.html:
+html---
 layout: default
 ---
-
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% endif %}
-
 {% if page.url != "/" and site.breadcrumbs %}
   {% unless paginator %}
     {% include breadcrumbs.html %}
   {% endunless %}
 {% endif %}
-
 <div id="main" role="main">
-  {% include sidebar.html %}
 
+  <div class="hero-banner">
+    <div class="hero-content">
+      <img class="hero-avatar" src="{{ site.baseurl }}/images/profile.png" alt="{{ site.author.name }}">
+      <div class="hero-text">
+        <h1>{{ site.author.name }}</h1>
+        <p class="hero-sub">{{ site.author.bio }} · {{ site.author.employer }}</p>
+        <div class="hero-links">
+          <a href="mailto:{{ site.author.email }}" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="{{ site.author.googlescholar }}" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="{{ site.author.ssrn }}" title="SSRN"><i class="fas fa-file-alt"></i></a>
+          <a href="https://github.com/{{ site.author.github }}" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include sidebar.html %}
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 class="page__title">{{ page.title }}</h1>
