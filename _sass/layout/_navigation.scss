@@ -203,27 +203,30 @@
   }
 
   .visible-links {
-    display: table;
-
-    li {
-      display: table-cell;
-      vertical-align: middle;
-
-      &:first-child {
-        font-weight: bold;
-        text-wrap: wrap;
-
-        a {
-          margin-left: 0;
-        }
-      }
-
-      &:last-child {
-        a {
-          margin-right: 0;
-        }
-      }
-    }
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   
+     li {
+       display: flex;
+       align-items: center;
+       vertical-align: middle;
+   
+       &:first-child {
+         font-weight: bold;
+         text-wrap: wrap;
+   
+         a {
+           margin-left: 0;
+         }
+       }
+   
+       &:last-child {
+         a {
+           margin-right: 0;
+         }
+       }
+     }
 
     #theme-toggle {
       a {
